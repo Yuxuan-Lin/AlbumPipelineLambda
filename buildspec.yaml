@@ -6,8 +6,7 @@ phases:
       - echo "Changing into source directory $CODEBUILD_SRC_DIR"
       - cd "src_search"
       - echo "Packaging cloudformation template"
-      - aws cloudformation package --template-file search-photos.yaml --s3-bucket albumlambdabucket \
-                --s3-prefix / --output-template-file template_file.yaml
+      - aws cloudformation package --template-file search-photos.yaml --s3-bucket albumlambdabucket --output-template-file template_file.yaml
 artifacts:
   files:
     - 'template_file.yaml'
