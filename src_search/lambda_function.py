@@ -59,7 +59,7 @@ def lambda_handler(event, context):
                 "fuzzy": {
                   "labels": {
                     "value": "",
-                    "fuzziness": 2
+                    "fuzziness": "AUTO"
                   }
                 }
               }
